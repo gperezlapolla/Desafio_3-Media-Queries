@@ -1,0 +1,99 @@
+/* Barra de navegación */
+
+.nav-izquierda {
+    background-color: blue;
+    padding: 10px;
+    float: left;
+    width: 15%;
+    color: white;
+    height: 125vh;
+    
+    
+  }
+  
+  .nav-izquierda h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-izquierda ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-izquierda li {
+    display: inline-block;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-izquierda li a {
+    color: #000;
+    text-decoration: none;
+   
+  }
+  
+  /* Tarjetas de productos */
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .productos .tarjeta {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+    }
+  
+   
+  /* Media queries */
+  
+  @media (max-width: 576px) {
+    /* Barra de navegación */
+    .nav-izquierda {
+      float: none;
+      width: 100%;
+    }
+  
+    /* Tarjetas de productos */
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 0;
+    }
+  
+    .productos .tarjeta {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .productos .tarjeta img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /* Barra de filtros */
+ .filtro{
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 30px;
+ }
+  
+  footer {
+    background-color: #d02a1e;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+  }
